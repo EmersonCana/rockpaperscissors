@@ -56,11 +56,11 @@ function play() {
   if (myMove == "") {
     return alert("Please pick a move");
   }
-  const min = Math.floor(1);
-  const max = Math.ceil(3);
+
   botMove = Math.floor(Math.random() * 3) + 1;
 
   let action = Object.keys(moves).find((move) => moves[move] == botMove);
+
   makeBotMove(action);
 
   switch (myMove) {
